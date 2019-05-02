@@ -1,0 +1,16 @@
+@{
+  Layout = "_Layout";
+}
+
+<h3>Here are all the albums by this @Model.["artist"].ArtistName:</h3>
+
+<ol>
+@foreach (var album in @Model["albums"])
+{
+  <li><a href='/artists/@Model["artist"].GetId()/albums/@album.GetId()'>@album.Name</a></li>
+}
+</ol>
+
+<p><a href='/artists/@Model["artist"].GetId()/albums/new'>Add a new item</a></p>
+<p><a href='/artists'>Return to artist list</a></p>
+<p><a href='/'>Return to Main Page</a></p>

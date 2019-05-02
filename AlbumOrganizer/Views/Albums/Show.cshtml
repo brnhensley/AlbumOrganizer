@@ -1,0 +1,11 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1>Album Details: </h1>
+
+<h2>@Model["album"].Name</h2>
+<h3>Artist: @Model["artist"].ArtistName</h3>
+
+<a href='/artists/@Model["artist"].GetId()/albums/new'>Add another album</a>
+<a href='/albums'>View all albums</a>

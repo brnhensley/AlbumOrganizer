@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Hello friend!</title>
+  </head>
+  <body>
+    <h1>To Do List</h1>
+    @{
+      Layout = "_Layout";
+    }
+
+    <form action="/albums" method="post">
+      <label for="albumName">Add a new item</label>
+      <input id="albumName" name="albumName" type="text">
+      <button type="submit">Submit</button>
+    </form>
+
+  </body>
+</html>
